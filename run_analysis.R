@@ -29,8 +29,8 @@ readRawData <- function(dataCode) {
 run_analysis <- function() {
 
   #merge
-  test=readData("test")
-  train=readData("train")
+  test=readRawData("test")
+  train=readRawData("train")
   mergedData <- rbind(test, train)
   
   #apply labels
